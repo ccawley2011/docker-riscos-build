@@ -18,6 +18,7 @@ git clone --remote-submodules --recurse-submodules https://gitlab.riscosopen.org
 # Add missing submodules for the tools
 pushd $CROSSTOOLS
 git submodule add https://gitlab.riscosopen.org/RiscOS/Sources/Apps/SquashApp.git RiscOS/Sources/Apps/SquashApp
+git submodule add https://gitlab.riscosopen.org/RiscOS/Tools/Sources/GNU/defmod.git RiscOS/Tools/Sources/GNU/defmod
 git submodule add https://gitlab.riscosopen.org/RiscOS/Tools/Sources/squeeze.git RiscOS/Tools/Sources/squeeze
 git submodule add https://gitlab.riscosopen.org/RiscOS/Tools/Sources/modsqz.git RiscOS/Tools/Sources/modsqz
 git submodule add https://gitlab.riscosopen.org/RiscOS/Tools/Sources/toansi.git RiscOS/Tools/Sources/toansi
@@ -37,6 +38,7 @@ source $CROSSTOOLS/RiscOS/Env/ROOL/CrossTools.sh
 # Export headers
 make -C $CROSSTOOLS/RiscOS/Sources/Lib/RISC_OSLib export_hdrs
 make -C $CROSSTOOLS/RiscOS/Sources/Lib/CLXLite export_hdrs
+make -C $CROSSTOOLS/RiscOS/Sources/Lib/OSLib export_hdrs
 make -C $CROSSTOOLS/RiscOS/Sources/Programmer/Squash export_hdrs COMPONENT=SquashLib
 
 # Export libraries
@@ -46,6 +48,7 @@ make -C $CROSSTOOLS/RiscOS/Sources/Programmer/Squash export_libs COMPONENT=Squas
 
 # Build host tools
 make -C $CROSSTOOLS/RiscOS/Sources/Apps/SquashApp install INSTTYPE=tool
+make -C $CROSSTOOLS/RiscOS/Tools/Sources/GNU/defmod install
 make -C $CROSSTOOLS/RiscOS/Tools/Sources/squeeze install TARGET=armsqueeze
 make -C $CROSSTOOLS/RiscOS/Tools/Sources/modsqz install
 make -C $CROSSTOOLS/RiscOS/Tools/Sources/toansi install
