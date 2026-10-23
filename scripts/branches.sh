@@ -17,10 +17,9 @@ cross_compile_branch RiscOS/Sources/Apps/SquashApp bavison/SquashApp CrossCompil
 cross_compile_branch RiscOS/Sources/FileSys/ADFS/ADFSFiler bavison/ADFSFiler CrossCompilationSupport
 cross_compile_branch RiscOS/Tools/Sources/Squish bavison/Squish CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/Kernel bavison/Kernel CrossCompilationSupport
-cross_compile_branch RiscOS/Sources/Desktop/Free bavison/Free CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/Desktop/Filer bavison/Filer CrossCompilationSupport
+cross_compile_branch RiscOS/Sources/Desktop/Free ccawley/Free ci-builds
 cross_compile_branch RiscOS/Sources/FileSys/FileCore bavison/FileCore CrossCompilationSupport
-cross_compile_branch RiscOS/Sources/Internat/Territory/TerritoryManager bavison/TerritoryManager CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/FileSys/RAMFS/RAMFS bavison/RAMFS CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/FileSys/SCSIFS/SCSIFS bavison/SCSIFS CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/FileSys/ADFS/ADFS bavison/ADFS CrossCompilationSupport
@@ -29,13 +28,10 @@ cross_compile_branch RiscOS/Sources/Networking/Econet bavison/Econet CrossCompil
 cross_compile_branch RiscOS/Sources/HWSupport/Sound/Sound0HAL bavison/Sound0HAL CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/HWSupport/Podule bavison/Podule CrossCompilationSupport
 cross_compile_branch RiscOS/Sources/HWSupport/PCI bavison/PCI CrossCompilationSupport
-cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/AcornLogo ccawley/AcornLogo cross-compile
 cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Circles ccawley/Circles cross-compile
 cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Pogo ccawley/Pogo cross-compile
 cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/ScrBounce ccawley/ScrBounce cross-compile
 cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Scrolling ccawley/Scrolling cross-compile
-cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Slider ccawley/Slider cross-compile
-cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Smear ccawley/Smear cross-compile
 cross_compile_branch RiscOS/Sources/Video/UserI/ScrSavers/Swarm ccawley/Swarm cross-compile
 cross_compile_branch RiscOS/Library ccawley/Library bin2h
 cross_compile_branch RiscOS/BuildSys ccawley/BuildSys bin2h
